@@ -1,0 +1,21 @@
+[Log]
+Level = 'warn'
+
+[WebServer]
+AllowOrigins = '\*'
+SecureCookies = false
+
+[WebServer.TLS]
+HTTPSPort = 0
+
+[[EVM]]
+ChainID = '137'
+
+[[EVM.Nodes]]
+Name = 'polygon mainnet'
+ WSURL = 'wss://polygon-mainnet.g.alchemy.com/v2/7si8YCOU_iTifRMzj08u4BD6WCD6jqc5'
+HTTPURL = 'https://polygon-mainnet.g.alchemy.com/v2/7si8YCOU_iTifRMzj08u4BD6WCD6jqc5'
+
+# abc123@example.com
+# docker run --platform linux/x86_64/v8 --name chainlink -v C:\Users\hp\Music\chainlink-sepolia:/chainlink -it -p 6688:6688 --add-host=host.docker.internal:host-gateway smartcontract/chainlink:2.8.0 node -config /chainlink/config.toml -secrets /chainlink/secrets.toml start
+# docker run --platform linux/x86_64/v8 --name chainlink -v C:\Users\sophi\chainlink-sepo:/chainlink -it -p 6688:6688 --add-host=host.docker.internal:host-gateway smartcontract/chainlink:2.8.0 node -config /chainlink/config.toml -secrets /chainlink/secrets.toml start
